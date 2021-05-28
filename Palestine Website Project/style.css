@@ -1,0 +1,246 @@
+:root{
+    --red: #fc0000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(contact.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.603);
+    font-weight: bold;
+}
+
+nav ul{
+    top: 5%;
+    padding: 5px 0px 5px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav li a{
+    padding-right:1em;
+}
+
+nav li a:hover{
+    color: red;
+}
+
+li:first-child{
+    margin-right: auto;
+    /* margin-left: 3em; */
+}
+
+.box{
+    width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+    color: white;
+    font-family: 'Century Gothic';
+}
+
+.box h1{
+    color: white;
+}
+
+.box1{
+    width: 650px;
+    background: rgba(255, 255, 255, 0.603);
+    padding: 80px;
+    margin: auto;
+    margin-top: 3%;
+    color: rgb(0, 0, 0);
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+}
+
+.box:hover{
+background: rgba(255, 255, 255, 0.603);
+}
+
+.box h1:hover{
+    color: black;
+}
+
+.box2{
+    width: 70%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: auto;
+    margin-top: 7%;
+    color: rgb(0, 0, 0);
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+}
+.slider{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    margin-top: 7%;
+    overflow: hidden;
+}
+
+.animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text h1{
+    color:#fcfcfc;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.animated-text h1:nth-child(1){
+    animation: text-move 9s infinite;
+}
+
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -100px;
+    }
+    50%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0px
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-left: 20%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.foot{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.603);
+}
+
+.foot ul{
+    margin:0px;
+    padding: 5px 0px 5px 30px;
+    text-align:center;
+}
+
+.foot li{
+    display: inline;
+    margin-right: 20px;
+}

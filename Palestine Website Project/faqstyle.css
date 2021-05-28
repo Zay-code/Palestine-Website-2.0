@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(dome.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.603);
+    font-weight: bold;
+}
+
+nav ul{
+    /* margin:0px; */
+    top: 5%;
+    padding: 5px 0px 5px 30px;
+    /* text-align:center; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav li a{
+    padding-right:1em;
+}
+
+nav li a:hover{
+    color: red;
+}
+
+li:first-child{
+    margin-right: auto;
+    /* margin-left: 3em; */
+}
+
+.box{
+    width: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+    color: white;
+    font-family: 'Century Gothic';
+}
+   
+.box:hover{
+    background: rgba(255, 255, 255, 0.603);
+    }
+    
+    .box h1:hover{
+        color: black;
+    }
+  .animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text h1{
+    color:#fcfcfc;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 70px;
+    /* letter-spacing: 1px; */
+}
+
+.animated-text h1:nth-child(1){
+    animation: text-move 9s infinite;
+}
+
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -100px;
+    }
+    50%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0px
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 100px;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  
+  .flip-card-front h1{
+    color: red;
+  }
+
+  .flip-card-back {
+    background-color: #2d7c37;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1{
+    font-size: 25px;
+  }
+
+  .flip-card-back p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  .column {
+    float: right;
+    width: 30%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -50px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .flip-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  .foot{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.603);
+}
+
+.foot ul{
+    margin:0px;
+    padding: 5px 0px 5px 30px;
+    text-align:center;
+}
+
+.foot li{
+    display: inline;
+    margin-right: 20px;
+}

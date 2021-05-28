@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="contactstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historyPage.html">History</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <div class="animated-text">
+                <h1>PEACE FOR PALESTINE</h1>
+                <h1>CONTACT US</h1>
+            </div>
+        </div>
+        
+        <section class="contact">
+            <div class="content">
+                <h2>CONTACT US</h2>
+                <p style="font-size: 28px; font-weight: bold;">Welcome to our organisation's support page. 
+                    <br>If you'd like to make an enquiry or just get in contact with us, you are welcome to send us a message!</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="stuff">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>26 Friesland Crescent, <br>Edgemead, Cape Town, <br>7441</p>
+                        </div>
+                   
+                </div>
+                <div class="stuff">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>(+27) 74 49 1840</p>
+                    </div>
+                </div>
+                <div class="stuff">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>peaceforpalestine01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://sheetdb.io/api/v1/gildx9rgkl7kb" method="POST" id="sheetdb-form" href="actionpage_php">
+                    <h2>Send Us A Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="data[name]" required="required" onchange="updateMessage(name, value)">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="data[email]" required="required" onchange="updateMessage(name, value)">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="data[message]" onchange="updateMessage(name, value)"></textarea>
+                        <span>Type your message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send" onclick="sendEmail()">
+                    </div>
+                    <div class="inputBox">
+                        <input type="reset" name="" value="Reset">
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LcsLfgaAAAAAGHEqOBQGooxhwXEP78vMhqrIG9x"></div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </section>
+            
+        <nav class="foot">
+            <ul>
+              <li><a href="https://instagram.com/peace_for_palestine?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/PFPales/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+              <li><a href="https://twitter.com/zay_017?s=11" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener("submit", e => {
+              e.preventDefault();
+              fetch(form.action, {
+                  method : "POST",
+                  body: new FormData(document.getElementById("sheetdb-form")),
+              }).then(
+                  response => response.json()
+              ).then((html) => {
+                alert('Message has been successfully sent!')
+              });
+            });
+          </script>
+          <script src="https://smtpjs.com/v3/smtp.js">
+          </script>
+        
+        <script>
+        
+            let a = {
+        
+            }
+            function updateMessage(key, value){
+        
+                a[key] = value;
+        
+            }
+            function sendEmail(){
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username:"zaynab.hartley@younglings.africa",
+                    Password:"Password1",
+                    To: 'peaceforpalestine01@gmail.com',
+                    From: `Email: ${a["data[email]"]}`,
+                    Subject: "New Email",
+                    Body: `Name: ${a["data[name]"]} <br> ${a["data[message]"]}`
+    }).then(
+        message=> alert(message)
+    );
+            }
+        </script>
+</body>
+</html>
+<!-- https://docs.google.com/spreadsheets/d/1KRVQzixSUhqOFXKQnEUhse5FwIac2ikce18LxvzOxTA/edit#gid=0 -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="histyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>History</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historyPage.html">History</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <div class="animated-text">
+                <h1>PEACE FOR PALESTINE</h1>
+                <h1>HISTORY</h1>
+            </div>
+        </div>
+
+    <div class="historycollaps">
+        <button type="button" class="collapsible"><h3>HISTORY OF PALESTINE</h3></button>
+        <div class="content">
+          <p>
+            Palestine is a small region of land that has played a prominent role in the ancient and modern history of the Middle East.
+            <br><br>The history of Palestine has been marked by frequent political conflict and violent land seizures because of its importance to several major world religions, and because Palestine sits at a valuable geographic crossroads between Africa and Asia.
+            <br><br>Today, Arab people who call this territory home are known as Palestinians, and the people of Palestine have a strong desire to create a free and independent state in this contested region of the world.
+          </p>
+        </div>
+        <button type="button" class="collapsible"><h3>ISRAELI-PALESTINE CONFLICT</h3></button>
+        <div class="content">
+          <p>The history of the Israeli–Palestinian conflict began with the establishment of the state of Israel in 1948.
+            <br><br>This conflict came from the intercommunal violence in Mandatory Palestine between Israelis and Arabs from 1920 and erupted into full-scale hostilities in the 1947–48 civil war. <br>The conflict continues to the present day on various levels.</p>
+        </div>
+        <button type="button" class="collapsible"><h3>THE SIMPLIFIED REALITY</h3></button>
+        <div class="content">
+          <p>The Arab Muslims, Arab Christians, and Arab jews lived in harmony for many years, especially in Jerusalem.
+            <br>
+            The three abrahamic religions share many historic landmarks; even places of worship side by side demonstrating strong unity support, and respect amongst the groups.
+            <br><br>
+          After the holocaust, as the antisemitism grew in Europe, many Jews were kicked out making them refugees.
+          Palestine took in most of the Jewish refugees.
+          <br><br>
+          However, as antisemitism got worse in Europe, the Zoinist movement bagan in the 19th century; an idealogy that wanted a Jewish only state.
+          <br><br>
+          To get rid of all the Jews from Europe - Britain stepped in and decided to give away Palestinian land to the European Jews without consulting with the United Nations, surrounding Arab countries, and Palestine themselves.
+          <br><br>
+          Eventually, temporary peace was made and land was divided.
+          <br>
+          However, the Zionists wanted more.
+          <br><br>
+          Britain and the UN stepped in once again and split the land to each group - howver the Zoinist land ended up getting all the agriculture, technology, transport, resources, etc. Whereas the Palestinians were left with nothing.
+          <br><br>
+          This soon got worse as Palestinians were denied resources andt their homes were illegally occupied and movement were restricted.
+          <br><br>
+          In 1948, David Ben-Gurion, then head of the World Zionist Organisation, announced the founding of the state of Israel in Palestine.
+          </div>
+        <button type="button" class="collapsible"><h3>THE BALFOUR DECLARATION</h3></button>
+        <div class="content">
+          <p>On November 2, 1917, the British foreign secretary, Lord Arthur Balfour, permanently changed the political and geographic landscape of the Middle East.<br><br>Outlining British support for the establishment of a Jewish state, it set in motion a series of events that culminated in the declaration of the previously been Palestine land - and the West Bank and Gaza strip.
+            <br><br>Ultimately, the declaration promised a state to the Jews despite Palestinian natives comprimising some 90% of the population. In the words of Palestinian scholar Edward Said, this was a declaration "made by a European power ... about a non-European territory .. in a flat disregard of both the presence and wishes of the native majority resident in that territory". It's ramifications are still felt today.</p>
+          </div>
+          <button type="button" class="collapsible"><h3>ILLEGAL OCCUPATION OF PALESTINE</h3></button>
+          <div class="content">
+            <img src="occ.jpg">
+            </div>
+    </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+        <nav class="foot">
+          <ul>
+            <li><a href="https://instagram.com/peace_for_palestine?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/PFPales/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+            <li><a href="https://twitter.com/zay_017?s=11" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          </ul>
+      </nav>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Peace For Palestine</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historyPage.html">History</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+            <div class="animated-text">
+                <h1>PEACE FOR PALESTINE</h1>
+                <h1>HOME</h1>
+
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="intro">
+            <h2>Palestine</h2>
+            </div>
+            <p>Palestine is a small region of land that has played a prominent role in the ancient and modern history of the Middle East. 
+                <br><br>The history of Palestine has been marked by frequent political conflict and violent land seizures because of its importance to several major world religions, and because Palestine sits at a valuable geographic crossroads between Africa and Asia. 
+                <br><br>Today, Arab people who call this territory home are known as Palestinians, and the people of Palestine have a strong desire to create a free and independent state in this contested region of the world.</p>
+        </div>
+        <div class="box2">
+          <div class="intro">
+          <h2>About Us</h2>
+          </div>
+          <p>Our organisation, Peace For Palestine, was established with the overall goal to create awareness through an online platform about the ongoing +70 years of conflict that has been happening between Palestine and Israel.</p>
+      </div>
+
+        <div class="slider">
+        <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="socsup.jpg" style="width:70%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="2.jpg" style="width:70%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="3.jpg" style="width:70%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="4.jpg" style="width:70%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="5.jpg" style="width:70%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="6.jpg" style="width:70%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="socsup.jpg" style="width:100%" onclick="currentSlide(1)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(6)">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+              
+              <nav class="foot">
+                <ul>
+                  <li><a href="https://instagram.com/peace_for_palestine?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.facebook.com/PFPales/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                  <li><a href="https://twitter.com/zay_017?s=11" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+
+    </body>
+</html>
